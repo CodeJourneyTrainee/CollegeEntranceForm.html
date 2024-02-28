@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADMISSIONS FORM</title>
+    <link rel="icon" type="image/x-icon" href="image\logo.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+      }
+      .text {
+        font-size: x-large;
+      }
+
+       #background {
+        background-image: url("image/background2.avif");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      } 
+      #main {
+        background-image: url("image/hd1.avif");
+        background-size: cover;
+        height: 50%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      #checkbox-container {
+    margin-left: 300px;
+    padding: 10px; 
+    border: 1px solid #030303;
+    display: inline-block; 
+    border-radius: 10px;
+  }
+ 
+    </style>
+</head>
+<body>
+  <div id="main" class="m-1 p-2">
+
+    <div class="row">
+      <div class="col-sm-3 ps-5">
+              <img
+            src="image\college1.jpeg"
+            alt="image"
+            style="width: 150px; height: 150px"
+          />
+          <p class="text"><strong>VISHNU COLLEGE</strong></p>
+      </div>
+      <div class="col-sm-6" id="background"></div>
+      <div class="col-sm-3 pt-5 ps-5">
+        <address>
+          <strong>VISHNU COLLEGE,</strong><br />
+          123 Maple Street, Houston, <br />
+          example@example.com,<br />
+          www.example.com,<br />
+          (123) 1234567.
+        </address>
+      </div>
+    </div>
+    <hr>
+
+    <div class="container">
+      <h1 class="text-center text-decoration-underline">
+        COLLEGE ADMISSIONS FORM
+      </h1>
+      <p>Enter your admission information below</p>
+
+      <form class="was-validated" >
+      <div class="row">
+        <div class="col-sm-5">
+        <div class="mb-3 mt-3">
+          <label for="fname" class="form-label"><strong>First Name:</strong></label>
+          <input type="text" class="form-control" id="fname" name="fname" placeholder="Max 30 characters allowed" maxlength="30" size="50" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+        <div class="mb-3 mt-3">
+          <label for="lname" class="form-label"><strong>Last Name:</strong></label>
+          <input type="text" class="form-control" id="lname" name="lname" placeholder="Max 30 characters allowed" maxlength="30" size="50" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+        <div class="mb-3 mt-3">
+          <label for="faname" class="form-label"><strong>Father Name:</strong></label>
+          <input type="text" class="form-control" id="faname" name="faname" placeholder="Max 30 characters allowed" maxlength="30" size="50" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+       
+        <div class="mb-3 mt-3">
+          <label for="mname" class="form-label"><strong>Mother Name:</strong></label>
+          <input type="text" class="form-control" id="mname" name="mname" placeholder="Max 30 characters allowed" maxlength="30" size="50" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+   
+        <div class="mb-3 mt-3">
+          <label for="email" class="mb-2"><strong>Email:</strong></label>
+          <input  type="email" class="form-control" id="email" name="email" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+        <div class="mb-3 mt-3">
+          <label for="phone" class="mb-2"><strong>Phone number:</strong></label>
+          <input  type="tel" class="form-control" id="phone" name="phone" placeholder="123-456-7890"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+    
+        <div class="mb-3">
+          <label for="altphone"  class="mb-2"><strong> Alternate Phone number:</strong></label>
+          <input type="tel" class="form-control" id="altphone" name="altphone"
+            placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+        </div>
+
+        <div class="mb-3">
+          <strong>Gender:</strong><br>
+          <div style="margin-left: 60px;">
+              <input class="form-check-input" type="radio" name="gender" id="gender" />
+              <label class="form-check-label" for="gender">Female</label><br>
+              <input class="form-check-input" type="radio" name="gender" id="gender1" checked />
+              <label class="form-check-label" for="gender1">Male</label>
+          </div>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please select a gender.</div>
+      </div>
+
+      <div class="mb-3 mt-3">
+        <label for="birthday" class="form-label"><strong>Birthday:</strong></label>
+        <input type="date" class="form-control" id="birthday" name="birthday" required/>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+
+        <div class="mb-3 mt-3">
+          <label for="category" class="form-label"><strong>Category:</strong></label>
+          <input type="text" class="form-control" id="category" required />
+          <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+           </div>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-5">
+
+  
+        <div class="mb-3 mt-4">
+          <label for="story" class="form-label"><strong>Address:</strong></label>
+        <textarea  class="form-control" id="story" name="story" rows="5" cols="33" required></textarea>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+        <div class="mb-3 mt-3">
+          <label for="city" class="form-label"><strong>City:</strong></label>
+          <input type="text" class="form-control" id="city" name="city" placeholder="Max 30 characters allowed" maxlength="30" size="50" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+        <div class="mb-3 mt-3">
+          <label for="myfile" class="form-label"><strong>Upload Photo:</strong></label >
+          <input type="file" class="form-control custom-file-input" id="myfile" name="myfile" required/>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please  attach the image.</div>
+        </div>
+
+        <div class="mb-3 mt-3">
+        <label for="sigFile" class="form-label"><strong>Upload Signature:</strong></label>
+          <input type="file" class="form-control custom-file-input" id="sigFile" name="sigFile" required/>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please attach the signature.</div>
+        </div>
+
+             <div class="mb-3 mt-3">
+          <label for="inputState"  class="mb-2"><strong>State:</strong></label>
+          <p id="selectstate"></p>
+          <select id="inputState" class="form-select" required>
+            <option value="select" >--Select State--</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+          </select>
+        </div>
+
+        <div class="mb-4">
+          <strong>Qualification:</strong><br />
+          <div style="margin-left: 100px">
+            <div class="form-check form-check-inline">
+              <p id="radio"></p>
+              <input class="form-check-input" type="radio" name="radiobutton" id="radio1"
+                value="option1" />
+              <label class="form-check-label" for="radio1">High School(10<sup>th</sup>)</label>
+            </div> <br />
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radiobutton" id="radio2" value="option2" />
+              <label class="form-check-label" for="radio2" >Higher School(12<sup>th</sup>)</label >
+            </div>
+            <br />
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radiobutton" id="radio3"
+                value="option3" />
+              <label class="form-check-label" for="radio3" >Graduation(Bachelors)</label>
+            </div>
+            <br />
+            <div class="form-check form-check-inline">
+              <input  class="form-check-input" type="radio" name="radiobutton" id="radio4" value="option4" />
+              <label class="form-check-label" for="radio4">Post Graduation(Masters)</label >
+            </div>
+            <br />
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radiobutton" id="radio5" value="option5"/>
+              <label class="form-check-label" for="radio5">PHD</label
+              >
+            </div>
+            <br />
+          </div>
+        </div>
+
+        <div class="form-group mb-3">
+          <label for="course"  class="mb-2"><strong>Courses Applied For:</strong></label>
+          <p id="select"></p>
+          <select class="form-select" id="course">
+            <option value="selectCourse">--Select Course--</option>
+            <option value="BCA(Bachelor of Computer Applications)">
+              BCA(Bachelor of Computer Applications)</option>
+            <option value="B.Com(Bachelor of Commerce)">
+              B.Com(Bachelor of Commerce)</option>
+            <option value="B.Sc(Bachelor of Science)">
+              B.Sc(Bachelor of Science) </option>
+            <option value="B.A(Bachelor of Arts)">
+              B.A(Bachelor of Arts)</option>
+            <option value="MCA(Master of Computer Application)">
+              MCA(Master of Computer Application)</option>
+            <option value="M.com(Master of Commerce)">
+              M.com(Master of Commerce) </option>
+            <option value="M.Sc(Master of Science)">
+              M.Sc(Master of Science)</option>
+            <option value="M.A(Master of Arts)">
+              M.A(Master of Arts) </option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <strong>Hobbies:</strong><br />
+          <div style="margin-left: 100px">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="hobbie1" value="option1"/>
+              <label class="form-check-label" for="hobbie1">Drawing</label>
+            </div>
+            <br />
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="hobbie2"  value="option2" />
+              <label class="form-check-label" for="hobbie2">Singing</label >
+            </div>
+            <br />
+            <div class="form-check form-check-inline">
+              <input  class="form-check-input"  type="checkbox" id="hobbie3" value="option3" />
+              <label class="form-check-label" for="hobbie3">Dancing</label>
+            </div>
+            <br />
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="hobbie4" value="option4" />
+              <label class="form-check-label" for="hobbie4">Sports</label>
+            </div>
+            <br />
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="hobbie5" value="option5" checked/>
+              <label class="form-check-label" for="hobbie5">Other</label >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+        <div class="form-check">
+          <strong style="margin-left: 200px;">Declaration:</strong><br />
+          <div class="text-center" id="checkbox-container">
+          <input class="form-check-input" type="checkbox" id="myCheck" style="margin-left: 5px;"  name="remember" required>
+          <label class="form-check-label ps-4" for="myCheck"> I declare I have read
+            and filled the above information, So if the information given<br> by
+            me is incorrect, you have the right to cancel with out informing
+            me.</label>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Check this checkbox to continue.</div>
+          </div>
+        </div>
+     <br>
+       <div class="text-center mt-4 ">
+        <button type="submit" class="btn btn-primary me-5 pe-4 ps-4 pt-2 pb-2 " onclick="return validateForm()" >
+          <strong>Submit</strong>
+        </button>
+        <button type="reset" class="btn btn-primary px-4 py-2">
+          <strong>Reset</strong>
+        </button>
+      </div>
+    </div>
+  </form>
+    </div>
+    <script>
+
+function validateForm() {
+    var stateValue = document.getElementById("inputState").value;
+    var courseValue = document.getElementById("course").value;
+    var radioValue = getRadioValue();
+
+    var stateValid = selectItem(stateValue);
+    var courseValid = selectCourse(courseValue);
+    var radioValid = selectRadio(radioValue);
+
+    return stateValid && courseValid && radioValid;
+}
+
+function getRadioValue() {
+    var radioButtons = document.getElementsByName("radiobutton");
+    for (let i = 0; i < radioButtons.length; i++) {
+        if (radioButtons[i].checked) {
+            return radioButtons[i].value;
+        }
+    }
+    return "";
+}
+
+function selectItem(value) {
+    var message = document.getElementById("selectstate");
+    if (value === "select") {
+        message.innerHTML = "Please select a valid state";
+        return false;
+    } else {
+        message.innerHTML = "";
+        return true;
+    }
+}
+
+function selectCourse(value) {
+    var message = document.getElementById("select");
+    if (value === "selectCourse") {
+        message.innerHTML = "Please select a valid course";
+        return false;
+    } else {
+        message.innerHTML = "";
+        return true;
+    }
+}
+
+function selectRadio(value) {
+    var message = document.getElementById("radio");
+    if (value === "") {
+        message.innerHTML = "Please select a valid Qualification";
+        return false;
+    } else {
+        message.innerHTML = "";
+        return true;
+    }
+  }
+
+    </script>
+</body>
+</html>
